@@ -14,8 +14,8 @@ const BentoTilt = ({ children, className = '' }) => {
     const relativeX = (event.clientX - left) / width;
     const relativeY = (event.clientY - top) / height;
 
-    const tiltX = (relativeY - 0.5) * 50;
-    const tiltY = (relativeX - 0.5) * -50;
+    const tiltX = (relativeY - 0.5) * 25;
+    const tiltY = (relativeX - 0.5) * -25;
 
     const newTransform = `perspective(700px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(0.90, 0.90, 0.90)`;
 
